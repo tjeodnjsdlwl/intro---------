@@ -1,0 +1,221 @@
+@import './reset.css';
+@import './common.css';
+
+
+.top-slide {
+  width: 100%;
+  color: #fff;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: #2e3833;
+  align-items: center;
+  overflow: hidden;
+}
+.top-slide .slide-wrap {
+  position: relative;
+  height: 50px;
+  align-items: center;
+  display: flex;
+}
+
+.top-slide .slide-wrap .slide-item {
+  position: absolute;
+  display: flex;
+  gap: 20px;
+  animation: marquee 20s linear infinite;
+}
+.top-slide .img-box {
+  width: 15px;
+  height: 20px;
+}
+.top-slide .slide-wrap .slide-item .text {
+  font-size: 20px;
+  color: #fff;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+/* header */
+.header {
+  width: 1323px;
+  height: 66px;
+  background-color: rgba(236,239,237,.95);
+  border: 1px solid #dedcd9;
+  margin-top: 20px;
+}
+.header .headwe-wrap {
+  height: 100%;
+  padding: 20px;
+}
+.header .headwe-wrap .group-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.header .headwe-wrap .menu-list {
+  display: flex;
+  gap: 20px;
+}
+.header .headwe-wrap .menu-list .menu-item a {
+  font-weight: 600;
+  color: #2f2f32;
+}
+/* footer */
+.footer {
+  background-color: #1c221f;
+  padding: 45px 0 30px;
+  margin-top: 100px;
+  color: #fff;
+}
+.footer .footer-wrap {
+  display: flex;
+  flex-direction: column;
+  grid-row-gap: 20px;
+}
+.footer .group-top {
+  max-width: 100%;
+  position: relative;
+  background-color: #2e3833;
+  border-radius: 0% 70px 0% 0%;
+  padding: 20px;
+}
+.footer .group-top .top-wrap {
+  display: flex;
+  gap: 20px;
+}
+.footer .group-top .top-wrap .text-box {
+  flex: 7;
+}
+.footer .group-top .top-wrap .btn-box {
+  flex: 3;
+}
+.footer .group-top span {
+  font-size: 120px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+}
+.footer .group-top .btn-box {
+  position: absolute;
+  right: 20px;
+}
+.footer .group-top .btn-box .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background: #f4f85a;
+  border-radius: 50%;
+}
+
+.footer .group-center .group-wrap {
+  grid-column-gap: 150px;
+  grid-template-columns: 1fr auto;
+  display: grid;
+  padding-top: 20px;
+}
+.footer .group-center .group-wrap .left-area {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+.footer .group-center .group-wrap .left-area .input-window {
+  max-width: 430px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer .group-center .group-wrap .left-area .input-text {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
+  padding: 7px;
+  font-size: 0.875em;
+  color: #666666;
+}
+.footer .group-center .group-wrap .right-area {
+  display: flex;
+  gap: 150px;
+  padding-right: 55px;
+}
+.footer .group-center .group-wrap .right-area .menu-list {
+  grid-template-columns: 1fr auto;
+  gap: 50px;
+  grid-row-gap: 18px;
+  padding-top: 30px;
+  display: grid;
+}
+.footer .group-center .group-wrap .right-area .menu-list a {
+  font-size: 16px;
+}
+
+.footer .group-center .group-wrap .right-area .menu-list a:hover {
+  color: #f4f85a;
+}
+.footer .group-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 100px;
+  font-size: 16px;
+}
+.footer .group-bottom .link-box {
+  display: flex;
+  gap: 50px;
+}
+.footer .group-bottom .link-box a:hover {
+  color: #f4f85a;
+}
+
+/* fixed-box */
+.fixed-box {
+  position: fixed;
+  top: auto;
+  left: 50px;
+  right: auto;
+  bottom: 50px;
+  width: 600px;
+  height: 80px;
+  background: #fff;
+  border-radius: 0% 100px 100px 0%;
+  padding: 20px;
+}
+.fixed-box .fixed-wrap {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+.fixed-box .btn {
+  display: flex;
+  align-items: center;
+  width: 195px;
+  height: 40px;
+  padding: 10px;
+  background: #2e3833;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 0% 100px 100px 0%;
+}
+.fixed-box .btn:hover {
+  background: #f4f85a;
+  color: #2f2f32;
+}
+.fixed-box p {
+  font-size: 16px;
+}
+
+.right-fixed-box {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 53px;
+  height: 170px;
+  background: #9BD4D7;
+}
